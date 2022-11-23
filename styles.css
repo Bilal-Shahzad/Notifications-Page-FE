@@ -14,3 +14,33 @@ button {
     color: inherit;
     cursor: pointer;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 1.75px 1px;
+    max-width: 48px;
+    position: relative;
+}
+
+/* Notification Header */
+.notifications__header {
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.25px;
+    margin-bottom: 2px;
+}
+.notifications__number {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.5px;
+    width: 2px;
+    display: grid;
+    place-items: center;
+    margin-left: 0.75px;
+}
