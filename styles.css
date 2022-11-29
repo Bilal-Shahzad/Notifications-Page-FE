@@ -1,15 +1,18 @@
 * {
+    border-color: blue;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 img {
+    border: green;
     display: block;
     max-width: 100%;
 }
 
 button {
+     border-color: red;
     font: inherit;
     color: inherit;
     cursor: pointer;
@@ -22,25 +25,44 @@ body {
 }
 
 .container {
-    padding: 1.75px 1px;
-    max-width: 48px;
+    padding: 1.70rem 1rem;
+    max-width: 48rem;
     position: relative;
 }
 
 /* Notification Header */
 .notifications__header {
+    border: orange;
     align-items: center;
     justify-content: space-between;
-    gap: 0.25px;
-    margin-bottom: 2px;
+    gap: 0.30rem;
+    margin-bottom: 1rem;
 }
 .notifications__number {
+    border: purple;
+    border: solid;
     background-color: blue;
-    color: white;
+    color: black;
     font-weight: bold;
-    border-radius: 0.5px;
-    width: 2px;
+    border-radius: 0.5rem;
+    width: 2.5rem;
     display: grid;
     place-items: center;
-    margin-left: 0.75px;
+    margin-left: 1rem;
+}
+body {
+    border: rosybrown;
+    min-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border: sienna;
+    border: solid;
+    background: white;
+    padding: 1.75rem 1rem;
+    max-width: 48rem;
+    position: relative;
 }
