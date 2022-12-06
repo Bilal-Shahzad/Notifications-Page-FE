@@ -97,3 +97,45 @@ body {
     display: grid;
     place-items: center;
 }
+
+.notifications__icon {
+    border: cornflowerblue;
+    border: solid;
+    display: block;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.notifications__icon--light {
+    display: none;
+}
+
+.notifications__icon--light:hover {
+    color: orange;
+}
+
+.notification__icon-dark {
+    display: block;
+}
+
+.notifications__icon--dark:hover {
+    color: lightseagreen;
+}
+/* Notifications */
+.notification {
+    display: flex;
+    padding: 1rem;
+}
+
+.notification--unchecked {
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.notification__unread-icon {
+    margin-left: 0.35rem;
+    display: inline-block;
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+}
