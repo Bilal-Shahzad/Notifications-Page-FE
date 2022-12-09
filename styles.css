@@ -139,3 +139,20 @@ body {
     width: 0.6rem;
     border-radius: 50%;
 }
+
+.notification__private-message-wrapper {
+    padding: 1rem;
+    margin-top: 0.75rem;
+    border-radius: 0.5em;
+    border: 1px solid var(--grayish-blue);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.notification__private-message-wrapper {
+    padding: 1.25rem;
+}
+
+.flex {
+    display: flex;
+}
