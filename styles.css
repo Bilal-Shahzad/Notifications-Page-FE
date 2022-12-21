@@ -68,6 +68,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .container {
@@ -156,7 +157,6 @@ body {
     padding: 1rem;
     margin-top: 0.75rem;
     border-radius: 0.5em;
-    border: 1px solid var(--grayish-blue);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -168,3 +168,4 @@ body {
 .flex {
     display: flex;
 }
+
