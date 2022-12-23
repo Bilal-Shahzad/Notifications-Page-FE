@@ -5,7 +5,8 @@ readButton.addEventListener('click', () => {
     });
 })
 
-// Dark mode toggle
-btnThemeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-})
+// Dark mode toggle button
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark");
+    }

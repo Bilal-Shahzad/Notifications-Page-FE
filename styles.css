@@ -21,6 +21,9 @@ button {
 }
 
 body {
+    color: blue;
+    background-color: blue;
+    font-size: var(100);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +33,7 @@ a {
     color: inherit;
 }
 .container {
+    background: white;
     padding: 1.70rem 1rem;
     max-width: 48rem;
     position: relative;
@@ -42,6 +46,10 @@ a {
     }
 }
 
+.dark-mode .container {
+    background-image: dark background;
+}
+
 /* Notification Header */
 .notifications__header {
     border: orange;
@@ -50,10 +58,16 @@ a {
     gap: 0.30rem;
     margin-bottom: 1rem;
 }
+.notifications__title {
+    font-size: 200;
+    font-weight: bold;
+    color: var(--very-dark-blue);
+}
+
 .notifications__number {
-    border: purple;
-    border: solid;
-    background-color: blue;
+    background-color:blue;
+    color: white;
+    font-weight: bold;
     color: black;
     font-weight: bold;
     border-radius: 0.5rem;
@@ -141,8 +155,35 @@ body {
 }
 
 .notification--unchecked {
+    background-color: grey;
     border-radius: 0.5rem;
     cursor: pointer;
+}
+
+.notification__profile-pic,
+.notification__post-photo {
+    max-height: 3rem;
+    max-width: 3rem;
+}
+
+.notification__message {
+    margin-bottom: 0.5rem;
+    font-weight: medium;
+}
+
+.notification__user-name,
+.notification__recent-post,
+.notification__group-message {
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* hovering over username */
+.notification__user-name:hover,
+.notification__recent-post:hover,
+.notification__group-message:hover,
+.notifications__read-btn:hover {
+    color: red ;
 }
 
 .notification__unread-icon {
@@ -161,11 +202,24 @@ body {
     cursor: pointer;
 }
 
+.notification__time {
+    color: grey;
+}
 .notification__private-message-wrapper {
     padding: 1.25rem;
+    padding: 1rem;
+    margin-top: 0.75rem;
+    border-radius: 0.5em;
+    border: 1px solid;
+    color: grey;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .flex {
     display: flex;
 }
 
+.notification__private-message-wrapper:hover {
+    background-color: grey;
+}
